@@ -24,5 +24,11 @@ const vechicles = [
         description : "has three wheels",
         image : "https://tinyurl.com/45sa9ak2",
     },
+    {
+        name: "Bemo",
+        description : "its a gameboy ¡",
+        image : "https://cutt.ly/CwnK0mrs",
+    },
+
 ];
 export default vechicles;

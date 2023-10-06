@@ -1,0 +1,10 @@
+.VehiclesViews{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.VehiclesViews img {
+    display: block;
+    max-width:100%;
+}

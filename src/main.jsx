@@ -3,18 +3,19 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import vechicles from './data/vehicles.js';
+import vehicles from './data/vehicles.js';  
+import VehiclesViews from './views/vehiclesViews.jsx';
 
 const routes = [
   { path: "/",
     element: <App />,
   }];
-vechicles.forEach((v)=>{
+vehicles.forEach((v)=>{
   routes.push({
     path: "/"+v.name,
-    element: <div>{v.name}</div>,
-  })
-})
+    element: <VehiclesViews vehicle= {v} />,
+  });
+});
 
 const router = createBrowserRouter(routes);
 
